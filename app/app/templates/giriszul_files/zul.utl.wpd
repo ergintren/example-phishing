@@ -1,0 +1,26 @@
+zk.load('zul',function(){if(zk._p=zkpi('zul.utl'))try{
+zul.utl.Script=zk.$extends(zk.Widget,{$define:{content:function(a){a?(this._fn="function"==typeof a?a:new Function(a),this.desktop&&this._exec()):this._fn=null},src:function(a){a&&(this._srcrun=!1,this.desktop&&this._exec())},charset:null},_exec:function(){var a=this.packages;if(!a)return this._exec0();this.packages=null;zk.load(a);zk.loading?zk.afterLoad(this.proxy(this._exec0)):this._exec0()},_exec0:function(){var a=this,e=this._fn;e&&(this._fn=null,zk.afterMount(function(){e.apply(a)}));if(this._src&&
+!this._srcrun){this._srcrun=!0;var b=document.createElement("script");b.id=this.uuid;b.type="text/javascript";b.charset=this._charset||"UTF-8";b.src=this._src;var c=this.$n();if(c){var d=c.nextSibling;jq(c).remove()}d?d.parentNode.insertBefore(b,d):document.body.appendChild(b)}this._node=jq(this.uuid,zk)[0]},ignoreFlexSize_:function(a){return!0},redraw:function(){},bind_:function(){this.$supers(zul.utl.Script,"bind_",arguments);this._visible=!1;this._exec()}});
+
+zkreg('zul.utl.Script');
+zul.utl.Timer=zk.$extends(zk.Widget,{_running:!0,_delay:0,$define:{repeats:_zkf=function(){this.desktop&&this._sync()},delay:_zkf,running:_zkf},play:function(){this.setRunning(!0)},stop:function(){this.setRunning(!1)},_sync:function(){this._stop();this._play()},_play:function(){if(this._running){var a=this.proxy(this._tmfn);this._repeats?(this._iid=setInterval(a,this._delay),zAu.onError(this.proxy(this._onErr))):this._tid=setTimeout(a,this._delay)}},_stop:function(){var a=this._iid;a&&(this._iid=
+null,clearInterval(a));if(a=this._tid)this._tid=null,clearTimeout(a);zAu.unError(this.proxy(this._onErr))},_onErr:function(a,b){410!=b&&404!=b&&405!=b||this._stop()},_tmfn:function(){this._repeats||(this._running=!1);this.fire("onTimer",null,{ignorable:!0,rtags:{onTimer:1}})},redraw:function(){},bind_:function(){this.$supers(zul.utl.Timer,"bind_",arguments);this._visible=!1;this._running&&this._play()},unbind_:function(){this._stop();this.$supers(zul.utl.Timer,"unbind_",arguments)}});
+
+zkreg('zul.utl.Timer');
+zul.utl.Style=zk.$extends(zk.Widget,{$define:{src:function(){this._content=null;this.rerender()},content:function(){this._src=null;this.rerender()},media:function(b){var a=this.$n("real");a&&(a.media=b)}},bind_:zk.ie8_?function(){this.$supers(zul.utl.Style,"bind_",arguments);if(this._src){var b=this;setTimeout(function(){var a=b.$n("real");a&&(a.href=b._src)})}}:function(){this.$supers(zul.utl.Style,"bind_",arguments)}});
+
+zkreg('zul.utl.Style');
+zk._m={};
+zk._m['default']=style$mold$=function(a){var c,b;a.push('<div style="display:none" id="',this.uuid,'">&#160;');(c=this._src)?a.push('<link id="',this.uuid,'-real" rel="stylesheet" type="text/css" href="',c,'"'):a.push('<style id="',this.uuid,'-real"');(b=this._media)&&a.push(' media="',b,'"');a.push(this.domAttrs_({id:!0}));c?a.push("/>"):(a.push(">"),(b=this._content)&&a.push(b),a.push("</style>"));a.push("</div>")};
+
+;zkmld(zk._p.p.Style,zk._m);
+zul.utl.Iframe=zk.$extends(zul.Widget,{_scrolling:"auto",$define:{src:function(b){var a=this.$n();a&&(a.src=b||"")},scrolling:function(b){b||(this._scrolling=b="auto");var a=this.$n();a&&(zk.gecko||zk.opera?a.scrolling="true"===b?"yes":"false"===b?"no":b:this.rerender())},align:function(b){var a=this.$n();a&&(a.align=b||"")},name:function(b){var a=this.$n();a&&(a.name=b||"")},autohide:function(b){var a=this.$n();a&&jq(a).attr("z_autohide",b)}},bind_:function(b,a,c){this.$supers(zul.utl.Iframe,"bind_",
+arguments);if(this._src){var d=this;c.push(function(){d.$n().src=d._src})}},domAttrs_:function(b){var a=this.$supers("domAttrs_",arguments)+' src="'+zjq.src0+'" frameborder="0"',c=this._scrolling;"auto"!=c&&(a+=' scrolling="'+("true"===c?"yes":"false"===c?"no":c)+'"');if(c=this._align)a+=' align="'+c+'"';if(c=this._name)a+=' name="'+c+'"';if(c=this._autohide)a+=' z_autohide="'+c+'"';return a}});
+
+zkreg('zul.utl.Iframe');
+zk._m={};
+zk._m['default']=iframe$mold$=function(a){a.push("<iframe",this.domAttrs_(),">","</iframe>")};
+
+;zkmld(zk._p.p.Iframe,zk._m);
+
+}finally{zk.setLoaded(zk._p.n);}});zk.setLoaded('zul.utl',1);

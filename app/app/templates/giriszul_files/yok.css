@@ -1,0 +1,341 @@
+@CHARSET "UTF-8";
+
+.z-tab-accordion-text {
+	vertical-align: left;
+	font-family: tahoma;
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
+	color: #d31312;
+}
+
+.z-tab-accordion-hm {
+	background-image: none;
+	overflow: hidden;
+	padding: 5px 0 3px;
+	zoom: 1;
+	background-color: #feedcc;
+}
+
+.y-button {
+	-moz-transition: all 0.218s ease 0s;
+	-moz-user-select: none;
+	background-color: #F5F5F5;
+	background-image: -moz-linear-gradient(center top, #F5F5F5, #F1F1F1);
+	border: 1px solid #DCDCDC;
+	border-radius: 2px 2px 2px 2px;
+	color: #444444;
+	display: inline-block;
+	font-size: 16px;
+	font-weight: bold;
+	height: 27px;
+	line-height: 27px;
+	min-width: 60px;
+	padding: 0 8px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.y-button-submit {
+	background-color: #8A8D8C;
+	background-image: -moz-linear-gradient(center top, #8A8D8C, #8A8D8C);
+	border: 1px solid #FFFFFF;
+	color: #FFFFFF;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+	width: 120px;
+	height: 30px;
+}
+
+.s-button {
+	-moz-transition: all 0.218s ease 0s;
+	-moz-user-select: none;
+	background-image: -moz-linear-gradient(center top, #F5F5F5, #F1F1F1);
+	border: 1px solid #DCDCDC;
+	border-radius: 2px 2px 2px 2px;
+	color: #444444;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: bold;
+	height: 27px;
+	line-height: 27px;
+	min-width: 60px;
+	padding: 0 8px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.s-button-submit {
+	background-color: #C5E9FF;
+	background-image: -moz-linear-gradient(center top, #C5E9FF, #C5E9FF);
+	border: 1px solid #FFFFFF;
+	color: #325287;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+	width: 120px;
+	height: 30px;
+}
+
+.labelWindow {
+	vertical-align: left;
+	font-family: tahoma;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.label {
+	vertical-align: center;
+	font-family: tahoma;
+	font-size: 11px;
+	font-color: #325287;
+	color: #325287;
+	font-weight: bold;
+	text-align: center;
+}
+
+.webservisaciklama {
+	font-family: tahoma;
+	font-size: 10px;
+}
+
+.labelGray {
+	vertical-align: center;
+	font-family: tahoma;
+	font-size: 11px;
+	font-color: #C8C8C8;
+	color: #C8C8C8;
+	font-style: italic;
+	text-align: center;
+}
+
+.windowlabel {
+	vertical-align: center;
+	font-family: tahoma;
+	font-size: 14px;
+	color: #325287;
+	font-weight: bold;
+	text-align: center;
+}
+
+.readonlytext {
+	font-family: tahoma;
+	font-size: 14px;
+	color: #555555;
+	background-color: #DADADA;
+}
+
+.tablabel {
+	vertical-align: center;
+	font-family: tahoma;
+	font-size: 11px;
+	color: yellow;
+	font-weight: bold;
+	text-align: center;
+}
+
+.kimlikE {
+	background-image: url(../images/nufus_erkek.jpg);
+	background-repeat: no-repeat;
+}
+
+.kimlikK {
+	background-image: url(../images/nufus_bayan.jpg);
+	background-repeat: no-repeat;
+}
+
+.labelLink {
+	vertical-align: center;
+	font-family: tahoma;
+	font-size: 11px;
+	color: #325287;
+	font-weight: bold;
+	text-align: center;
+	cursor: hand;
+}
+
+.labelHeader {
+	vertical-align: center;
+	font-family: tahoma;
+	font-size: 14px;
+	color: black;
+	font-weight: bold;
+	text-align: center;
+	cursor: hand;
+}
+
+.zorunlu {
+	vertical-align: center;
+	font-family: tahoma;
+	font-size: 11px;
+	font-weight: bold;
+	text-align: center;
+	color: #C02F3E;
+}
+
+.listBox {
+	vertical-align: center;
+	font-family: tahoma;
+	font-size: 11px;
+	background-color: #99ccff;
+	text-align: left;
+}
+
+.buton {
+	vertical-align: center;
+	font-family: tahoma;
+	font-size: 12px;
+	color: #325287;
+	font-weight: bold;
+	text-align: center;
+	width: 160px;
+	height: 30px;
+}
+
+.buton2 {
+	vertical-align: center;
+	font-family: tahoma;
+	font-size: 15px;
+	color: #325287;
+	font-weight: bold;
+	text-align: center;
+	width: 120px;
+	height: 30px;
+}
+
+.brifing {
+	vertical-align: center;
+	font-family: tahoma;
+	font-size: 12px;
+	color: #325287;
+	font-weight: bold;
+	text-align: center;
+	width: 160px;
+	height: 30px;
+}
+
+.kucukButon {
+	vertical-align: center;
+	font-family: tahoma;
+	color: #325287;
+	font-weight: bold;
+	text-align: center;
+	width: 50px;
+	height: 15px;
+}
+
+.uzunButon {
+	vertical-align: center;
+	font-family: tahoma;
+	color: #325287;
+	font-weight: bold;
+	text-align: center;
+	width: 100px;
+	height: 15px;
+}
+
+.hb {
+	background-color: #99ccff;
+}
+
+.chbox {
+	vertical-align: center;
+	font-family: tahoma;
+	font-size: 11px;
+	color: #325287;
+	font-weight: bold;
+	text-align: center;
+}
+
+.textbox {
+	vertical-align: center;
+	font-family: tahoma;
+	font-size: 12px;
+}
+
+.listboxBasliklari {
+	font-family: tahoma;
+	font-size: 12px;
+	color: #325287;
+	font-weight: bold;
+	text-align: center;
+}
+
+.listcellCss {
+	border-right: 1px;
+	border-right-style: solid;
+	border-right-color: #EDEDED;
+}
+
+.scroll {
+	width: 1200px;
+	height: 450px;
+	overflow: auto;
+} /*SEC:HBOX:hboxCss*/ /*RULE:HBOX*/
+.hboxCss.z-hbox {
+	background-color: #9FC4C4; /*PRO*/
+	border-style: double; /*PRO*/
+	border-width: thin; /*PRO*/
+	border-color: #000000; /*PRO*/
+	border-top-style: double; /*PRO*/
+	border-top-width: thin; /*PRO*/
+	border-top-color: #000000; /*PRO*/
+	border-right-style: double; /*PRO*/
+	border-right-width: thin; /*PRO*/
+	border-right-color: #000000; /*PRO*/
+	border-bottom-style: double; /*PRO*/
+	border-bottom-width: thin; /*PRO*/
+	border-bottom-color: #000000; /*PRO*/
+	border-left-style: double; /*PRO*/
+	border-left-width: thin; /*PRO*/
+	border-left-color: #000000; /*PRO*/
+	background-repeat: repeat; /*PRO*/
+}
+
+/*RULE_E*/ /*RULE:SEPARATOR*/
+.hboxCss.z-hbox td.z-hbox-sep {
+	width: 0px; /*PRO:separator*/
+}
+
+/*RULE_E*/ /*SEC_E*/ /*SEC:LABEL:cursorLabel*/ /*RULE:BASIC*/
+.cursorLabel.z-label {
+	color: #0080C0; /*PRO*/
+	font-weight: bold; /*PRO*/
+	font-style: normal; /*PRO*/
+	text-decoration: underline; /*PRO*/
+	cursor: pointer;
+}
+
+/*RULE_E*/ /*SEC_E*/ /*SEC:GRID:myname1*/ /*RULE:FOOTER*/
+div.z-grid.myname1 .z-footer {
+	border-bottom-style: none; /*PRO*/
+	border-top-style: none; /*PRO*/
+}
+
+/*RULE_E*/ /*SEC_E*/ /*SEC:LISTBOX-DEFAULT:myname1*/ /*RULE:LISTHEADER*/
+div.z-listbox.myname1 div.z-list-header-cnt, div.z-listbox.myname1 div.z-listheader-cnt {
+	color: #00FFFF; /*PRO*/
+}
+
+.myname1.z-listbox div.z-listbox-header tr.z-list-head, .myname1.z-listbox div.z-listbox-header tr.z-auxhead, .myname1.z-listbox div.z-listbox-header tr.z-listhead, .myname1.z-listbox div.z-listbox-header tr.z-auxhead
+	{
+	background-color: #00FFFF; /*PRO*/
+}
+
+.z-button {
+	padding: 0px;
+}
+
+.ortayazi {
+	font-family: arial, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+}
+/*RULE_E*/ /*SEC_E*/
+.listHeaderStyle {
+	font-family: tahoma;
+	font-size: 10px;
+	color: #325287;
+	font-weight: bold;
+	text-align: center;
+}
