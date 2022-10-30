@@ -14,7 +14,7 @@ def mail_gonder(alici, gonderen):
     mail=smtplib.SMTP("smtp.outlook.office365.com",587)
     mail.ehlo()
     mail.starttls()
-    mail.login("ergintren13@outlook.com", "Ergin56.") 
+    mail.login("your mail", "your password") 
     mesaj=MIMEMultipart()
     mesaj["FROM"]=gonderen
     mesaj["TO"]=alici
